@@ -31,7 +31,7 @@ export const Task = ({ task }) => {
             <Typography variant='h4'>{name}</Typography>
         </div>
 
-        ~<div className='taskButtons'>
+        <div className='taskButtons'>
             <Button variant='contained' onClick={() => setIsDialogOpen(true)}>
                 <EditIcon />
             </Button>

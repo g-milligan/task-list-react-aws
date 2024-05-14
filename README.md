@@ -91,4 +91,30 @@ rafc
 
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by Prettier
 
+## Initialize the API Sub Project
+
+Just use the defaults (hit enter) when initializing npm:
+
+./api_express
+```
+npm init
+```
+
+Install all of the dependencies for the API:
+
+./api_express
+```
+npm install express nodemon cors serverless-http @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb
+```
+
+Delete the `test` under "scripts" in `./api_express/package.json` and replace it with:
+
+```
+    "start": "node index",
+    "dev": "DEVELOPMENT=true nodemon index"
+```
+
+The above "dev" script name sets an environment variable, `DEVELOPMENT` with a value of "true". `nodemon allows hot reload of the app.
+
+Add `"type": "module",` to `./api_express/package.json` so that `imports` can be used instead of `require`. 
 
