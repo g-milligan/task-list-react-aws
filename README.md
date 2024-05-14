@@ -78,3 +78,17 @@ Finally, confirm that the ReactJS app still starts with `npm start`. There shoul
 Move the `.gitignore` to the root of the project and add `/ui_react` into the .gitignore.
 
 After these steps above, this is the first commit of the project. 
+
+## VSCode Extensions Used in this Tutorial
+
+- [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) by dsznajder
+
+Example usage - create boilerplate code:
+```
+# React Arrow Function Component
+rafc 
+```
+
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by Prettier
+
+
